@@ -1,0 +1,242 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>PROJEK UTS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    </head>
+    
+    <!--BAGIAN CSS--> 
+    <style>
+        .box{
+            margin-bottom: 30px;
+            margin-top: 30 px; 
+            
+        }
+        
+        body{
+            background: #524545;
+        }
+        .container h2{
+            color: white;
+        }
+        .carousel .carousel-item{
+        height: 500px;
+        }
+
+        .carousel img{
+        min-height: 500px;
+        object-fit: cover;
+        }
+    </style>
+    <!--BAGIAN CSS-->
+    
+    <!--BAGIAN BOOTSTRAP-->
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark box">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarScroll">
+    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#location">Location</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Aksi
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+           <li><a class="dropdown-item" href="#judul">Menghitung Berat Badan Ideal</a></li> 
+            <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#metodebmi">Metode BMI</a></li>
+          <li><a class="dropdown-item" href="#metodebroca">Metode Broca</a></li>
+          
+          
+        </ul>
+     
+    </ul>
+    <form class="d-flex">
+      <input class="form-control mr-2" type="search" placeholder="Ketikkan Sesuatu" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Cari</button>
+    </form>
+  </div>
+</nav>
+        <div id="carouselExampleCaptions" class="carousel slide box" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="berat1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="berat2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="berat3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        <p class="box"></p>
+    
+            <div class="card text-center" id="metodebmi">
+  <div class="card-header" id="judul">
+      MENGHITUNG BERAT BADAN IDEAL
+   
+  </div>
+        </div>
+                
+        <div class="row box">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Metode BMI</h5>
+        <p class="card-text">BMI adalah salah satu indikator kadar relatif lemak tubuh seseorang yang sudah dewasa dengan usia 20 tahun ke atas. BMI digunakan untuk menentukan status berat badan seseorang apakah ia memiliki badan yang terlalu kurus, ideal, atau terlalu gemuk, dan juga membantu menilai status berat badan terhadap resiko masalah kesehatan akibat kekurangan atau kelebihan berat badan. </p>
+        <a href="#hitung" class="btn btn-primary">Coba</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Metode Broca</h5>
+        <p class="card-text">Rumus ini dikembangkan pada tahun 1871 oleh Pierre Paul Broca (seorang Dokter Angkatan Darat Prancis) untuk membantu menentukan berat badan yang ideal. Rumusnya (Broca Index atau BI) menjadi patokan untuk kalkulasi lain yang kita kenal sekarang. Awalnya, BI digunakan untuk menghitung berat badan normal tetapi kemudian diperluas menjadi Berat Badan Ideal.</p>
+        <a href="#hitung" class="btn btn-primary">Coba</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--BAGIAN BOOTSTRAP-->
+        
+        <!--BAGIAN PROGRAM INTI-->
+
+        <div class="container" id="hitung" >
+            <center><h2>MENGHITUNG BERAT BADAN IDEAL</h2></center>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>HITUNG BERAT BADAN IDEAL ANDA</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Tinggi Badan Anda (cm)</label>
+                        <input type="number" name="inputtinggi" id="inputtinggi" class="form-control" required=""
+                               placeholder="Masukkan Tinggi Badan">
+                    </div>
+                    <div class="form-group">
+                        <label>Berat Badan Anda (kg)</label>
+                        <input type="number" name="inputberat" id="inputberat" class="form-control" required=""
+                               placeholder="Masukkan Berat Badan">
+                    </div>
+                     <div class="form-group">
+                        <label>Jenis Kelamin Anda</label>
+                        <p>1. Laki-Laki</p>
+                         <p>2. Perempuan</p>
+                         <input type="number" name="jk" id="jk" class="form-control" min="1" max="2" required=""
+                               placeholder="Pilih Jenis Kelamin Anda (1/2)">
+                    </div>
+                     
+                    <div class="form-group">
+                        <a onclick="hitung()"  class="btn btn-primary">Coba</a>
+                    </div>
+                    <div class="form-group">
+                        
+                        <h4>
+                        <p id="bmi"></p>
+                        <p id="keterangan"></p>
+                        <p id="ideal"></p>
+                        </h4>
+                       
+                        
+                    </div>
+                </div>
+                <div class="card-footer box">
+                
+                </div>
+            </div>
+        </div>
+        <!--BAGIAN PROGRAM INTI-->
+        
+        <!--BAGIAN JAVASCRIPT-->
+        <script type="text/javascript">
+                var tinggi, tinggi_bmi, berat, keterangan, bmi, berat_ideal, jk;
+                function hitung(){
+                tinggi = parseFloat(document.getElementById("inputtinggi").value);
+                tinggi_bmi=tinggi/100;
+                berat = parseFloat(document.getElementById("inputberat").value);
+                bmi=berat / (tinggi_bmi*tinggi_bmi);
+                jk= parseFloat(document.getElementById("jk").value);
+                if(bmi>27){
+                    keterangan = "Anda Sangat Gemuk";
+                }
+                    else if((bmi >= 25.1)&(bmi<=27)){
+                    keterangan = "Anda Lumayan Gemuk";
+                }
+                    else if((bmi>=18.5)&(bmi<=25)){
+                    keterangan = "Ideal";
+                }
+                    else if((bmi>=17)&(bmi<=18.4)){
+                    keterangan = "Anda Lumayan kurus";
+                }
+                    else if (bmi<=18.3){
+                    keterangan = "Anda Sangat Kurus";
+                }
+                    else{
+                        keterangan="Data Belum terisi";
+                    }
+                    if(jk==1){
+                        berat_ideal = ((tinggi-100)-((tinggi-100)*0.1)); 
+                    }
+                    else if(jk==2){
+                        berat_ideal = ((tinggi-100)-((tinggi-100)*0.15)); 
+                    }
+                    else{
+                        berat_ideal= keterangan ="Data Belum Terisi";
+                    }
+                    document.getElementById('bmi').innerHTML = "Hasil Perhitungan BMI : "+ bmi.toFixed(1);
+                    document.getElementById('keterangan').innerHTML = "Keterangan :"+keterangan;
+                    document.getElementById('ideal').innerHTML = "Berat Ideal Badan Anda adalah :"+berat_ideal;
+                }
+        </script>
+        <!--BAGIAN JAVASCRIPT-->
+        
+        <p class="box"></p>
+         <div class="container  box">
+        <div class="embed-responsive embed-responsive-16by9" id="location">
+  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.112004174764!2d98.654153614321!3d3.561675997408045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fe03ed8450b%3A0xe84941c195268efc!2sUniversity%20of%20Sumatera%20Utara!5e0!3m2!1sen!2sid!4v1620058922421!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+</div>
+</div>
+        
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+
+</html>
